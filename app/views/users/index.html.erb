@@ -1,0 +1,19 @@
+<div align="center"><h1>Trip Buddies</h1></div>
+
+<%= form_tag(users_login_path, method: "post") do %>
+  <div class="field" align="center">
+  <%= label_tag(:username, "Username:")%>
+  <%= text_field_tag(:username) %><br/><br/>
+  </div>
+  
+  <div class="field" align="center">
+  <%= label_tag(:password, "Password:")%>
+  <%= text_field_tag(:password) %><br/><br/>
+  </div>
+  
+  <div class="action" align="center">
+  <%= submit_tag("Login", name: "login")%>
+  <%= submit_tag("Sign Up", name: "sign_up")%>
+  </div>
+<% end %>
+
